@@ -2,20 +2,22 @@
   background-color: #181825;
   padding: 6px;
   border-radius: 10px;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
 }
 
 .inp {
   font-size: 18px;
   width: 100%;
-  color: #313244;
-  background-color: beige;
-  padding: 2px 0;
-  margin: 6px 2px;
+  color: #cdd6f4;
+  background-color: #313244;
   border: none;
-  border-radius: 10px;
-  display: flex;
+  margin: 0 0 12px 0;
+  border-radius: 5px;
 }
 
 .save {
-  display: flex;
+  width: 50%;
 }
