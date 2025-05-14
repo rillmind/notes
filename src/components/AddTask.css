@@ -1,0 +1,21 @@
+.addtask {
+  background-color: #181825;
+  padding: 6px;
+  border-radius: 10px;
+}
+
+.inp {
+  font-size: 18px;
+  width: 100%;
+  color: #313244;
+  background-color: beige;
+  padding: 2px 0;
+  margin: 6px 2px;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+}
+
+.save {
+  display: flex;
+}

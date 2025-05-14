@@ -1,0 +1,27 @@
+import { ChevronRightIcon, TrashIcon } from "lucide-react";
+import "./Tasks.css";
+
+function Tasks({ tasks, onTaskClick, onTaskClickDelete }) {
+  return (
+    <ul className="fundo">
+      {tasks.map((task) => (
+        <li key={task.id} className="tarefa">
+          <button
+            onClick={() => onTaskClick(task.id)}
+            className={task.isCompleted ? `line-throught` : `buttonTittle`}
+          >
+            {task.isCompleted ? `>` + task.tittle : task.tittle}
+          </button>
+          <button className="icon">
+            <ChevronRightIcon />
+          </button>
+          <button onClick={() => onTaskClickDelete(task.id)} className="icon">
+            <TrashIcon />
+          </button>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+export default Tasks;

@@ -1,0 +1,44 @@
+.fundo {
+    background-color: #181825;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+.tarefa {
+    display: flex;
+    gap: 2px;
+}
+
+.buttonTittle {
+    font-size: 18px;
+    width: 100%;
+    color: #cdd6f4;
+    background-color: #11111b;
+    padding: 2px 0;
+    margin: 6px 2px;
+    border: none;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.line-throught {
+    font-size: 18px;
+    width: 100%;
+    color: #cdd6f4;
+    background-color: #11111b;
+    padding: 2px 0;
+    margin: 6px 2px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: line-through;
+    text-align: left;
+}
+
+.icon {
+    padding: 2px 0;
+    margin: 6px 2px;
+    display: flex;
+    border: none;
+    background-color: #11111b;
+    border-radius: 10px;
+}
