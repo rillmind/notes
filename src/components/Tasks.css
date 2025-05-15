@@ -1,7 +1,7 @@
 .fundo {
     background-color: #181825;
     padding: 6px;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .tarefa {
@@ -9,12 +9,12 @@
     gap: 2px;
 }
 
-.buttonTittle {
+.buttonTitle {
     font-size: 18px;
     width: 100%;
     color: #cdd6f4;
     background-color: #11111b;
-    padding: 2px 0;
+    padding: 5px;
     margin: 6px 2px;
     border: none;
     border-radius: 5px;
@@ -26,7 +26,7 @@
     width: 100%;
     color: #cdd6f4;
     background-color: #11111b;
-    padding: 2px 0;
+    padding: 5px;
     margin: 6px 2px;
     border: none;
     border-radius: 5px;

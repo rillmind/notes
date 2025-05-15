@@ -6,21 +6,8 @@ import { useState } from "react";
 function App() {
   const [tasks, setTasks] = useState([
     {
-      id: 1,
-      tittle: "Terminar mini curso",
-      description: "Terminar o vídeo do cursinho de React",
-      isCompleted: false,
-    },
-    {
-      id: 2,
-      tittle: "Terminar mini curso",
-      description: "Terminar o vídeo do cursinho de React",
-      isCompleted: false,
-    },
-    {
-      id: 3,
-      tittle: "Terminar mini curso",
-      description: "Terminar o vídeo do cursinho de React",
+      title: "tarefa",
+      description: "x",
       isCompleted: false,
     },
   ]);
@@ -40,11 +27,21 @@ function App() {
     setTasks(newTasks);
   }
 
+  function onAddTaskSubmit(title, description) {
+    const newTask = {
+      id: tasks.length + 1,
+      title,
+      description,
+      isCompleted: false,
+    };
+    setTasks([...tasks, newTask]);
+  }
+
   return (
     <div className="app">
       <div className="div1">
-        <h1 className="tittle">Gerenciador de tarefas</h1>
-        <AddTask />
+        <h1 className="title">Gerenciador de tarefas</h1>
+        <AddTask onAddTaskSubmit={onAddTaskSubmit} />
         <Tasks
           tasks={tasks}
           onTaskClick={onTaskClick}

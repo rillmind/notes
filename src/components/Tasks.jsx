@@ -8,9 +8,9 @@ function Tasks({ tasks, onTaskClick, onTaskClickDelete }) {
         <li key={task.id} className="tarefa">
           <button
             onClick={() => onTaskClick(task.id)}
-            className={task.isCompleted ? `line-throught` : `buttonTittle`}
+            className={task.isCompleted ? `line-throught` : `buttonTitle`}
           >
-            {task.isCompleted ? `>` + task.tittle : task.tittle}
+            {task.isCompleted ? `>` + task.title : task.title}
           </button>
           <button className="icon">
             <ChevronRightIcon />

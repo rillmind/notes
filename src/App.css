@@ -1,6 +1,7 @@
 body {
   padding: 0;
   margin: 0;
+  border-radius: 0;
 }
 
 .app {
@@ -15,7 +16,7 @@ body {
   width: 400px;
 }
 
-.tittle {
+.title {
   color: #cdd6f4;
   text-align: center;
   font-size: 32px;
